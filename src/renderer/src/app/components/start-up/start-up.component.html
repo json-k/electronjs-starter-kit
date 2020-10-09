@@ -1,0 +1,20 @@
+<div fxFlex class="spaced-content" fxLayout="column">
+  <div
+    id="title-bar"
+    fxLayout="row"
+    fxLayoutGap="20px"
+    fxLayoutAlign="start center"
+  >
+    <img src="assets/icon.png" />
+    <h1>/StartUp Component</h1>
+  </div>
+  <p>
+    Show the <a (click)="showAbout()">about</a> panel. This currently running
+    application instance is
+    <span *ngIf="!app.isPackaged()"><b>NOT</b>&nbsp;</span>packaged.
+  </p>
+  <div fxFlex></div>
+  <div fxLayout="row" fxLayoutAlign="end center">
+    <button (click)="gotoMain()">Next ≫</button>
+  </div>
+</div>

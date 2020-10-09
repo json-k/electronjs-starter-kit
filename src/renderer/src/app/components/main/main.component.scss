@@ -1,0 +1,36 @@
+:host {
+    flex-grow: 1;
+}
+
+#title-bar {
+    height: 64px;
+}
+
+#title-bar h1 {
+    margin: 0;
+    line-height: 50px;
+}
+
+#info-panel {
+    margin: 10px 0;
+    background-color: rgba(232, 232, 232,1);
+    overflow-y: auto;
+    font-family: monospace;
+}
+
+#info-panel table {
+    margin: 10px;
+}
+
+#info-panel table tr td:not(:first-child){
+    font-weight: bold;
+}
+
+#info-panel table tr td {
+    vertical-align: top;
+    padding: 5px 0;
+}
+
+#info-panel table tr td p {
+    margin: 0;
+}

@@ -1,0 +1,42 @@
+<div fxFlex class="spaced-content" fxLayout="column">
+  <div
+    id="title-bar"
+    fxLayout="row"
+    fxLayoutGap="20px"
+    fxLayoutAlign="start center"
+  >
+    <h1>/Main Component</h1>
+  </div>
+  <p>
+    If you are seeing this (which you are); then Angular Routing works inside
+    <a href="https://www.electronjs.org/docs/all" target="_blank">Electron</a>.
+    Below is some information about the OS this application is currently
+    runnning on:
+  </p>
+  <div id="info-panel" fxFlex>
+    <table>
+      <tr *ngFor="let prop of ['hostname','ostype','release','platform','architecture']">
+        <td>{{prop | titlecase}}</td>
+        <td>{{osinfo[prop]}}</td>
+      </tr>
+      <tr *ngFor="let cpu of osinfo.cpus; index as i">
+        <td>CPU[{{i}}]</td>
+        <td>
+          <p>{{cpu.model}} speed:{{cpu.speed}}</p>
+          <p>Times: 
+          <span *ngFor="let time of ['user','nice','sys','idle','irq']">
+            {{time}} : {{cpu.times[time]}}
+          </span>
+        </p>
+        </td>
+      </tr>
+      <tr>
+        <td>Memody</td>
+        <td>Total {{osinfo.memory.total}} Free {{osinfo.memory.free}}</td>
+      </tr>
+    </table>
+  </div>
+  <div fxLayout="row" fxLayoutAlign="start center">
+    <button (click)="gotoBack()">≪ Back</button>
+  </div>
+</div>
