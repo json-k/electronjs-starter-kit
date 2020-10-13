@@ -1,5 +1,5 @@
 import { Router } from '@angular/router';
-import { ElectronAppService } from './../../services/ElectronApp.service';
+import { ElectronAppService } from '../../services/electron-app.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({

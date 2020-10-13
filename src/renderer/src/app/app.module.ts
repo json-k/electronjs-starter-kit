@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { StartUpComponent } from './components/start-up/start-up.component';
 import { MainComponent } from './components/main/main.component';
-import { ElectronAppService } from './services/ElectronApp.service';
+import { ElectronAppService } from './services/electron-app.service';
 
 @NgModule({
   declarations: [

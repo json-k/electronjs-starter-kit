@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { Title } from '@angular/platform-browser';
-import { ElectronAppService } from './services/ElectronApp.service';
+import { ElectronAppService } from './services/electron-app.service';
 
 @Component({
   selector: 'app-root',
